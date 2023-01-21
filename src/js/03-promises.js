@@ -25,7 +25,7 @@ const onFormSub = el => {
         .catch(message => Notiflix.Notify.failure(message));
     }, +delay + i * +step);
   }
-  e.currentTarget.reset();
+  el.currentTarget.reset();
 };
 
 form.addEventListener('submit', onFormSub);
